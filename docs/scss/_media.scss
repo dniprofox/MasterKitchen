@@ -368,7 +368,13 @@ h3 {
 .checkout__content-list {
 	font-size: 18px;
 }
+.page__title {
+	font-size: 20px;
+	line-height: 28px;
+}
 }	
+
+
 
 
 @media (max-width: 480px) {
@@ -506,13 +512,14 @@ h3 {
 	line-height: 30px;
 }
 .payment__content-item {
-	padding: 20px;
+	padding: 12px;
 	margin-bottom: 15px;
 }
 .payment__content-text, .order__content-text {
 	padding-bottom: 20px;
 }
 .order__content-title {	
+	margin-left: 10px;
 	font-size: 18px;
 	line-height: 26px;	
 }
@@ -522,12 +529,9 @@ h3 {
 	font-size: 16px;
 	line-height: 20px;
 }
-.page__title {
-	font-size: 20px;
-	line-height: 28px;
-}
+
 .payment__content-img img {
-	max-width: 55px;
+	max-width: 45px;
 }
 .order__content-item {
 	min-height: 100%;
@@ -638,9 +642,23 @@ h3 {
 		display: none;		
 	}
 }
+.payment__content-box--cash {
+	padding-left: 15px;
+}
+.payment {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
 }
 
-@media (max-width: 414px) {
+@media (max-width: 420px) {
+	.nav-menu__btn {
+    margin-top: 18px;
+		
+}
+.menu__btn {	
+	margin-right: 5px;
+}
 	.checkout__content-list li {
     margin-bottom: 10px;
 }
@@ -706,6 +724,20 @@ h3 {
 }
 .complete {	
 	padding-bottom: 15px;
+}
+.page__title {
+	font-size: 18px;
+	line-height: 20px;
+}
+.order__content-img img,
+.payment__content-img img {
+	max-width: 33px;
+}
+.order__content-item {	
+	padding: 15px 10px 0px 10px;
+}
+.payment__content-box--cash {
+	padding-left: 10px;
 }
 
 }
