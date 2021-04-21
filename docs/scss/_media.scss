@@ -189,9 +189,7 @@ padding-bottom: 30px;
 	line-height: 48px;	
 }
 
-.contacts__content {
-	max-width: 100%;	
-}
+
 .maps__item img {
 	max-width: 100%;
 }
@@ -317,6 +315,7 @@ h3 {
 .contacts__content {
 	img {
 		width: 35px;		
+		margin-top: 5px;
 	}
 }
 .contacts__list-link {
@@ -634,7 +633,11 @@ h3 {
 	top: 5%;
 	height: 84%;
 }
-
+.contacts__content {
+	img {
+		display: none;		
+	}
+}
 }
 
 @media (max-width: 414px) {
