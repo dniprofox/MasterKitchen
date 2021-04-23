@@ -160,7 +160,7 @@ span {
 .header {
   padding: 20px 10px;
   border-bottom: 4px solid #B6B0B0;  
-  position: relative;
+  position: relative; 
 }
 .header__inner {
   display: flex;
@@ -195,6 +195,7 @@ span {
 }
 .menu__list-link:hover {
   color: rgba(#0F0F0F, 1);
+  border-bottom: 1px solid #3D9AEF;
 }
 .menu__list-link--active {  
   border-bottom: 1px dashed #3D9AEF;
@@ -250,14 +251,15 @@ span {
 }
 //////mobile-menu
 .mobile-menu {
-  position: absolute;
+  position: absolute;  
+  position: fixed;
   display: none;
   right: 0;
   top: 0px;
   width: 350px;
   background-color: #fff;
   z-index: 10;
-  height: 100vh;
+  height: 100vh;  
 }
 .mobile-menu__header {
   height: 83px; 
@@ -362,6 +364,7 @@ span {
   margin-bottom: 40px;
 }
 .catalog__items {
+  padding: 0px 2px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -383,6 +386,10 @@ span {
   color: #fff;
   font-weight: 600;
   font-size: 20px;
+  transition: $trans;
+  &:hover {
+    color: #FFB905;
+  }
 }
 /////////consult
 .consult {  
@@ -446,7 +453,7 @@ span {
   li {
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 5;
     margin-bottom: 1px;
   }
   &::before {
@@ -916,9 +923,6 @@ span {
     font-weight: 700;   
     }
 }
-
-
-
 
 //////////footer-question
 .footer__question {

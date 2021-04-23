@@ -378,6 +378,31 @@ h3 {
 
 
 @media (max-width: 480px) {
+	.header {
+		position: fixed;
+		z-index: 10;
+		background-color: #fff;
+		width: 100vw;
+	}
+	.present {
+		padding-top: 100px;
+	}
+	.present__content {
+		top: 38%;	
+	}
+	.contacts {
+		padding-top: 100px;
+	}
+	.consult-phone {
+		padding-top: 140px;
+	}
+	.comments {
+    padding-top: 120px;
+    padding-bottom: 35px;
+}
+.comments {
+	padding-top: 120px;
+}
 	.nav-menu__btn{
    margin-top: 14px;   
 }
@@ -389,6 +414,8 @@ h3 {
 	}
 	.mobile-menu {
 		width: 100%;		
+		position: fixed;
+		z-index: 10;
 	}
 	.footer {
 		height: 180px;
@@ -646,15 +673,14 @@ h3 {
 	padding-left: 15px;
 }
 .payment {
-	padding-top: 20px;
+	padding-top: 130px;
 	padding-bottom: 10px;
 }
 }
-
+////////////////////
 @media (max-width: 420px) {
 	.nav-menu__btn {
-    margin-top: 18px;
-		
+    margin-top: 18px;		
 }
 .menu__btn {	
 	margin-right: 5px;
@@ -714,9 +740,10 @@ h3 {
 }
 .checkout__content-list img {
 	margin-right: 5px;	
+	max-width: 43px;
 }
 .present__content {
-	top: 15%;	
+	top: 38%;	
 }
 .complete__content-list  li{
 	font-size: 14px;
@@ -739,7 +766,25 @@ h3 {
 .payment__content-box--cash {
 	padding-left: 10px;
 }
+.order__content-title {
+	margin-left: 0px;
+	font-size: 16px;
+	line-height: 20px;
 
 }
+.order__content-list, .order__content-text, .payment__content-text {
+	font-size: 14px;
+	line-height: 18px;
+}
+.order__content-list {
+	padding-left: 22px;
+	margin-bottom: 10px;
+}
+.maps__adress {	
+	font-size: 14px;
+}
+.checkout__content-list::before {
+	left: -3px;
+}
 
-
+}

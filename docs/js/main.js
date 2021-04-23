@@ -2,22 +2,13 @@ $(function () {
 
 
   ////////menu
-	$('.menu__btn').on("click", function(){
+	$('.menu__btn,.mobail__header-prev').on("click", function(){
     $(this).toggleClass('open');
     $('.mobile-menu').toggle(400);   
+    // $('body').toggle('lock');
   });  
   
-  // modal screen activate
-$('.mobile-menu').live('click', function(){
-  modalScreen.show();
-  $('body').css('overflow','hidden');
-  });
-  
-  // modal screen de-activate
-  $('body, html').live('click', function(){
-  modalScreen.hide();
-  $('body').css('overflow','auto');
-  });
+ 
 
    
  
