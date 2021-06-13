@@ -1,0 +1,63 @@
+/////present////////
+.present {
+	background-image: url(../images/home/present_bg.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:cover;
+  position: relative;  
+  max-width: 100%;
+  min-height: 6px;
+}
+.color__img{
+  position: absolute;
+  left: 0;
+  top: -7px;
+  picture{
+    max-width:100%;
+  }
+}
+
+.present__img{   
+  display: flex;
+  justify-content: right;
+  padding-left: 132px;
+  img{
+    display: inline-block;    
+    
+  }
+}
+.present__content {
+  position: absolute;
+  max-width: 395px;
+  left: 15%;
+  top: 18%;
+  
+}
+.present__title {
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 107%;
+  margin-bottom: 28px;
+}
+.present__text  {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 80px;
+}
+.present__link {
+  text-align: center;
+  padding: 20px 0px;
+  width: 333px;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(69.56deg, #1676D3 6.07%, #499EF0 77.84%);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  transition: $trans;
+  &:hover {
+    color: #fff;
+  }
+}

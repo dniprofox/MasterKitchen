@@ -1,7 +1,7 @@
 
 @media (max-width: 1280px) {
 	.present {
-		min-height: 480px;
+		min-height: 100%;
 	}
 }
 
@@ -28,11 +28,11 @@
 	.present__text {
 		margin-bottom: 40px;
 	}
-	.delivery {
-    height: 500px;
-}
-.present {
-	min-height: 450px;
+	.present__img{
+		padding-left: 0;
+	}
+.color__img{
+	max-width: 40%;
 }
 .question__content {
 	display: flex;
@@ -61,11 +61,16 @@
 .statut__item img {
 	padding: 15px;
 }
-
+.catalog__item {
+	width: 100%;
+}
 
 }
 
 @media (max-width: 780px) {
+	.statut__item {
+		max-width: 49%;
+	}
 	.menu__list {
 		display: none;
 	}
@@ -76,23 +81,30 @@
 	.nav__contacts {
 		display: flex;
 		flex-direction: column;
+		margin-right: 40px;
 	}
+	.nav__contacts-link{
+		margin-bottom: 5px;
+	} 
+	.contact__viber img, .contact__whatsapp img, .contact__telegram img {
+    margin-right: 5px;
+}
 	.nav__lang {
 		margin-right: 10px;
-	}
-	.contact__phone {
-		margin-bottom: 10px;
-	}
+	}	
 	.nav__lang {
 		display: none;
-	}
-	.nav__contacts {
-		margin-right: 40px;
 	}
 	.header__logo {
 		img {
 			width: 153px;
 		}
+	}
+	.contact__viber span,
+	.contact__whatsapp span,
+	.contact__phone span,
+	.contact__telegram span {
+		padding-left: 3px;
 	}
 	.nav__lang-mobail {
 		display: block;
@@ -119,15 +131,10 @@
 	font-size: 16px;	
 	margin-bottom: 50px;
 }
-.delivery__img {  
-  width: 300px;	
-}
+
 .section__title {	
 	font-size: 24px;
 	line-height: 34px;	
-}
-.delivery {
-	height: 360px;	
 }
 .content__text {
 	margin-bottom: 50px;	
@@ -157,9 +164,7 @@
 	height: 390px;
 	text-align: center;
 }
-.present {
-	min-height: 360px;
-}
+
 .catalog {
 	padding-top: 35px;
 	padding-bottom: 40px;
@@ -188,7 +193,6 @@ padding-bottom: 30px;
 	font-size: 38px;
 	line-height: 48px;	
 }
-
 
 .maps__item img {
 	max-width: 100%;
@@ -222,7 +226,7 @@ padding-bottom: 30px;
 @media (max-width: 630px)  {
 .nav__contacts-link  {
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 700;		
 }
 .contact__phone img,
 .contact__telegram img {
@@ -265,9 +269,7 @@ padding-bottom: 30px;
 	padding-top: 15px;
 	padding-bottom: 30px;
 }
-.present {
-	min-height: 285px;
-}
+
 .catalog {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -374,9 +376,6 @@ h3 {
 }
 }	
 
-
-
-
 @media (max-width: 480px) {
 	.header {
 		position: fixed;
@@ -384,11 +383,12 @@ h3 {
 		background-color: #fff;
 		width: 100vw;
 	}
-	.present {
-		padding-top: 100px;
-	}
-	.present__content {
-		top: 38%;	
+	.mobile-menu__link {
+		width: 100%;
+	}	
+	
+	.statut__item {
+		max-width: 80%;
 	}
 	.contacts {
 		padding-top: 100px;
@@ -449,9 +449,10 @@ h3 {
 	.delivery__inner {
 		justify-content: center;
 		text-align: center;
+		flex-direction: column;
 	}
-	.delivery__img {
-		display: none;
+	.delivery__content{
+		max-width: 100%;
 	}
 	.delivery__title {
     margin-bottom: 15px;
@@ -460,16 +461,8 @@ h3 {
 .content__text {
 	font-size: 14px;
 	line-height: 20px;
-	margin-bottom: 30px;
-	
+	margin-bottom: 30px;	
 }	
-.delivery {
-	height: 260px;
-}
-.delivery__link {
-	padding: 15px 100px;
-	font-size: 14px;
-}
 .complete__inner {
 	display: flex;
 	flex-direction: column;
@@ -507,14 +500,12 @@ h3 {
 }
 .consult__link {
 	font-size: 14px;	
-	padding: 15px 78px 15px 80px;	
+	padding: 15px 60px 15px 60px;	
 }
 .consult__title {
 	margin-bottom: 15px;
 }
-.present {
-	min-height: 210px;
-}
+
 .catalog__title {
 	margin-bottom: 11px;
 }
@@ -676,6 +667,10 @@ h3 {
 	padding-top: 130px;
 	padding-bottom: 10px;
 }
+.delivery__link {
+	padding: 15px 70px;
+	font-size: 14px;
+}
 }
 ////////////////////
 @media (max-width: 420px) {
@@ -683,7 +678,7 @@ h3 {
     margin-top: 18px;		
 }
 .menu__btn {	
-	margin-right: 5px;
+	margin-right: 1px;
 }
 	.checkout__content-list li {
     margin-bottom: 10px;
@@ -724,6 +719,7 @@ h3 {
 	margin-left: 0px;
 	margin-bottom: 10px;
 }
+
 .comments__contacts {
 	font-size: 16px;
 }
@@ -742,9 +738,7 @@ h3 {
 	margin-right: 5px;	
 	max-width: 43px;
 }
-.present__content {
-	top: 38%;	
-}
+
 .complete__content-list  li{
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -786,5 +780,43 @@ h3 {
 .checkout__content-list::before {
 	left: -3px;
 }
+.nav__menu{
+	margin-right: 10px;
+}
+.nav__contacts-link--whatsapp,
+.nav__contacts-link--viber{
+	display: none;
+}
+.nav__contacts-link--telegram{
+	img{
+		margin-right: 5px;
+	}
+}
+.contact__viber span, .contact__whatsapp span, .contact__phone span, .contact__telegram span {
+	padding-left: 3px;
+}
+.catalog__item-content {	
+	padding: 4px 20px 4px 20px;
+	color: #fff;
+}
+.catalog__item-name{
+  font-size: 14px;
+}
+.catalog__item-price{
+  font-size: 18px;
+  font-weight: 700;
+}
+.delivery {
+	padding-top: 23px;
+	padding-bottom: 40px;	
+}
+.delivery__img{
+	max-width: 320px;
+	width: 100%;
+}
+.delivery__link {
+	padding: 15px 70px;
+}
+
 
 }

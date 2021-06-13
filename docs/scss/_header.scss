@@ -1,0 +1,154 @@
+// ****header***
+.header {
+  padding: 20px 10px;
+  border-bottom: 4px solid #B6B0B0;  
+  position: relative; 
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+} 
+.nav {
+  display: flex;	
+}
+.nav__contacts{
+	display: flex;	
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;  
+	margin-right: 20px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;  
+  li {
+    margin-right: 17px;
+  }
+}
+.menu__list-link {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(#0F0F0F, .5);  
+  transition: $trans;
+}
+.menu__list-link:hover {
+  color: rgba(#0F0F0F, 1);
+  border-bottom: 1px solid #3D9AEF;
+}
+.menu__list-link--active {  
+  border-bottom: 1px dashed #3D9AEF;
+  color: rgba(#0F0F0F, 1);
+}
+.contact__viber,
+.contact__whatsapp,
+.contact__phone,
+.contact__telegram {
+  display: flex;
+  margin-right: 17px;
+  span {
+    padding-left: 5px;
+  }
+  img {
+    margin-top: 2px;
+  }
+}
+.nav__contacts-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  line-height: 141.69%;
+  font-family: 'Roboto', sans-serif;	
+	transition: $trans;
+}
+.nav__contacts-link{
+	span:hover{
+		color:#0024c2;
+	}
+}
+.nav__lang {
+  display: flex;
+}
+.nav__lang-link {  
+  font-size: 17px;
+  font-weight: 600;  
+  color: rgba(#000, .5); 
+  transition: $trans; 
+  padding: 0px 10px;
+  &:hover {
+    color: #000;
+  }
+}
+.nav__lang-link--active {
+  color: #000;
+}
+.nav__ua {
+  position: relative;  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: 30px;
+    width: 4px;
+    background: #464646;
+    border-radius: 3px;
+  }
+}
+/////mobile-menu
+.mobile-menu {
+  position: absolute;  
+  position: fixed;
+  display: none;
+  right: 0;
+  top: 0px;
+  width: 350px;
+  background-color: #fff;
+  z-index: 10;
+  height: 100vh;  
+}
+.mobile-menu__header {
+  height: 83px; 
+  padding: 0px 20px;
+  background: linear-gradient(69.98deg, #2F80ED 25.38%, #56CCF2 79.04%);
+  opacity: 0.9;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobail__header-prev {
+  cursor: pointer;
+}
+.mobail__logo {
+  width: 156px;
+  margin: 0 auto;    
+}
+.mobile-menu__list {
+  padding: 46px 25px;
+  li {
+    border-bottom: 1px solid #D7EDF8;
+    &:first-child {
+      border-top: 1px solid #D7EDF8;
+    }
+  }
+  
+}
+.mobile-menu__link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  color: #0F0F0F;
+  padding: 15px 15px 15px 50px;  
+  img {
+    position: absolute;
+    left: 11px;    
+  }
+}
