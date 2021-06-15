@@ -58,6 +58,12 @@
     margin-top: 2px;
   }
 }
+.contact__whatsapp{
+  margin-left: -6px;  
+  img{
+    margin-top: -1px;
+  }
+}
 .nav__contacts-link {
   font-size: 20px;
   font-weight: 500;
@@ -131,7 +137,7 @@
   margin: 0 auto;    
 }
 .mobile-menu__list {
-  padding: 46px 25px;
+  padding: 30px 25px;
   li {
     border-bottom: 1px solid #D7EDF8;
     &:first-child {
@@ -144,11 +150,18 @@
   position: relative;
   font-size: 16px;
   font-weight: 600;
-  line-height: 23px;
+  line-height: 20px;
   color: #0F0F0F;
-  padding: 15px 15px 15px 50px;  
-  img {
+  padding: 13px 15px 13px 50px;  
+  img {    
     position: absolute;
     left: 11px;    
   }
+}
+.mobile-menu__link.mobile-menu__link--watsapp{
+  img{
+    margin-top: -6px;
+    margin-left: -7px;
+  }
+  
 }

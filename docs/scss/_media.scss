@@ -1,7 +1,7 @@
 
 @media (max-width: 1280px) {
 	.present {
-		min-height: 100%;
+		height: 100%;
 	}
 }
 
@@ -24,6 +24,7 @@
 	}
 	.present__content {
 		top: 15%;
+		left: 13%;
 	}
 	.present__text {
 		margin-bottom: 40px;
@@ -86,8 +87,11 @@
 	.nav__contacts-link{
 		margin-bottom: 5px;
 	} 
-	.contact__viber img, .contact__whatsapp img, .contact__telegram img {
+	.contact__viber img,.contact__telegram img {
     margin-right: 5px;
+}
+.contact__whatsapp img{
+	margin-right: 1px;
 }
 	.nav__lang {
 		margin-right: 10px;
@@ -119,6 +123,9 @@
 		justify-content: center;
 		text-align: center;
 	}
+	.present{
+		height: 700px;
+	}
 	.present__inner {
 		justify-content: center;
 	}
@@ -131,7 +138,15 @@
 	font-size: 16px;	
 	margin-bottom: 50px;
 }
-
+.present__content {	
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);	
+}
+.color__img {	
+	left: -13px;
+	top: -4px;
+}
 .section__title {	
 	font-size: 24px;
 	line-height: 34px;	
@@ -169,10 +184,12 @@
 	padding-top: 35px;
 	padding-bottom: 40px;
 }
+.credit__content,
 .payment__content,
  .order__content {
 	flex-direction: column;
  }
+ .credit__content-col,
  .order__content-col {
 	 width: 100%;
  }
@@ -180,6 +197,7 @@
 	font-size: 32px;
 	line-height: 44px;	
 }
+.credit,
 .order{ 
 padding-top: 30px;
 padding-bottom: 30px;
@@ -228,6 +246,9 @@ padding-bottom: 30px;
 	font-size: 16px;
 	font-weight: 700;		
 }
+.nav__menu{
+	display: none;
+}
 .contact__phone img,
 .contact__telegram img {
 	margin-top: -2px;
@@ -251,15 +272,15 @@ padding-bottom: 30px;
 	padding-top: 20px;
 	max-width: 100%;	
 }
+.present {
+	height: 535px;
+}
 .present__inner {
 	text-align: center;
 }
-.present__text {
-	display: none;
-}
 .present__content {
 	left: 50%;
-	top: 4%;
+	top: 40%;
 	transform: translateX(-50%);	
 }
 .complete__list {
@@ -385,13 +406,14 @@ h3 {
 	}
 	.mobile-menu__link {
 		width: 100%;
+		padding: 13px 1px 12px 50px;
 	}	
 	
 	.statut__item {
 		max-width: 80%;
 	}
 	.contacts {
-		padding-top: 100px;
+		padding-top: 130px;
 	}
 	.consult-phone {
 		padding-top: 140px;
@@ -434,10 +456,13 @@ h3 {
 	.footer__link {
 		font-size: 24px;
 	}
+	.present{
+		margin-top: 160px;
+	}
 	.present__title {
 		font-size: 26px;
 		line-height: 30px;
-		padding-bottom: 20px;
+		padding-bottom: 5px;
 		width: 212px;
 		margin: 0 auto;
 	}
@@ -541,6 +566,7 @@ h3 {
 	font-size: 18px;
 	line-height: 26px;	
 }
+.credit__content-list
 .order__content-list,
 .order__content-text,
 .payment__content-text {
@@ -555,8 +581,9 @@ h3 {
 	min-height: 100%;
 	padding: 25px 10px 15px 20px;
 }
+.credit,
 .order{
-	padding: 30px 0px 15px 0px;
+	padding: 120px 0px 15px 0px;
 }
 .order__content-img img {
 	margin-top: 5px;
@@ -683,8 +710,27 @@ h3 {
 	.checkout__content-list li {
     margin-bottom: 10px;
 }
+.mobile-menu__list {
+	padding: 20px 25px;
+}
+.present {
+	margin-top: 96px;
+	height: 500px;
+}
+.present__img{
+	padding-right: 20px;
+}
 .present__link {	
-	max-width: 280px;		
+	max-width: 280px;			
+}
+.present__content{
+	top: 45%;
+}
+.present__text {	
+	margin-bottom: 15px;
+}
+.color__img{
+	display: none;
 }
 .contacts__inner {
 	padding: 10px 0px;
@@ -750,10 +796,17 @@ h3 {
 	font-size: 18px;
 	line-height: 20px;
 }
+.credit__content-item{
+	min-height: 230px;
+}
+.credit__content-title{
+	font-size: 20px;
+}
 .order__content-img img,
 .payment__content-img img {
 	max-width: 33px;
 }
+.credit__content-item,
 .order__content-item {	
 	padding: 15px 10px 0px 10px;
 }
@@ -761,11 +814,11 @@ h3 {
 	padding-left: 10px;
 }
 .order__content-title {
-	margin-left: 0px;
+	margin-left: 5px;
 	font-size: 16px;
 	line-height: 20px;
-
 }
+.credit__content-text,
 .order__content-list, .order__content-text, .payment__content-text {
 	font-size: 14px;
 	line-height: 18px;
@@ -783,8 +836,7 @@ h3 {
 .nav__menu{
 	margin-right: 10px;
 }
-.nav__contacts-link--whatsapp,
-.nav__contacts-link--viber{
+.nav__contacts{
 	display: none;
 }
 .nav__contacts-link--telegram{

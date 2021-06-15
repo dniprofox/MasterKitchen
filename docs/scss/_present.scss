@@ -1,12 +1,8 @@
 /////present////////
 .present {
-	background-image: url(../images/home/present_bg.png);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:cover;
   position: relative;  
-  max-width: 100%;
-  min-height: 6px;
+  background: linear-gradient(89.84deg, #E9F7FF 38.76%, #FFFFFF 67.83%, #E9F7FF 98.11%);
+  max-width: 100%;  
 }
 .color__img{
   position: absolute;
@@ -28,9 +24,11 @@
 }
 .present__content {
   position: absolute;
+  padding: 15px;
   max-width: 395px;
   left: 15%;
   top: 18%;
+  background-color: rgba(#fff, .1);
   
 }
 .present__title {
