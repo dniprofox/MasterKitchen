@@ -408,7 +408,6 @@ h3 {
 		width: 100%;
 		padding: 12px 1px 12px 50px;
 	}	
-	
 	.statut__item {
 		max-width: 80%;
 	}
@@ -716,8 +715,13 @@ h3 {
 	.checkout__content-list li {
     margin-bottom: 10px;
 }
+.mobile-menu{
+	overflow: visible;
+}
 .mobile-menu__list {
 	padding: 10px 25px;
+	height: 100%;	
+	overflow: auto;
 }
 .present {
 	margin-top: 96px;
