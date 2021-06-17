@@ -1,3 +1,3 @@
 # MasterKitchen
 
-https://dniprofox.github.io/MasterKitchen/catalog-ua.html
+https://dniprofox.github.io/MasterKitchen/catalog-ru.html
