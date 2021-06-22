@@ -125,9 +125,8 @@
   height: 100%; 
   overflow-x: auto;  
 }
-.mobile-menu__header {
-  height: 58px; 
-  padding: 0px 20px;
+.mobile-menu__header {  
+  padding: 12px 20px;
   background: linear-gradient(69.98deg, #2F80ED 25.38%, #56CCF2 79.04%);
   opacity: 0.9;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.12);
@@ -172,7 +171,7 @@
   
 }
 .momile__menu-contacts{
-  padding: 30px 10px 40px 10px;
+  padding: 30px 10px 130px 10px;
   background-color: #F7F7F7;
   a{
     padding-top: 12px;
