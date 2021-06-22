@@ -79,6 +79,9 @@
 		display: block;		
 		margin-right: 10px;
 	}
+	.mobail-menu__btn{
+		margin-right: 15px;
+	}
 	.nav__contacts {
 		display: flex;
 		flex-direction: column;
@@ -700,6 +703,9 @@ h3 {
 .order__payment-page{
 	padding: 45px 0px 15px 0px;
 }
+.delivery__img{	
+	width: 100%;
+}
 }
 ////////////////////
 @media (max-width: 420px) {
@@ -712,6 +718,9 @@ h3 {
 .menu__btn {	
 	margin-right: 1px;
 }
+.mobail-menu__btn{
+	margin-right: 15px;
+}
 	.checkout__content-list li {
     margin-bottom: 10px;
 }
@@ -719,11 +728,10 @@ h3 {
 	overflow: auto;
 	
 }
-.mobile-menu__list {
-	padding: 10px 25px;
+.mobile-menu__list-wrapper {
 	height: 100%;	
 	overflow: auto;
-}
+	}
 .present {
 	margin-top: 96px;
 	height: 550px;
@@ -874,7 +882,7 @@ h3 {
 	padding-bottom: 30px;	
 }
 .delivery__img{
-	max-width: 320px;
+	max-width: 330px;
 	width: 100%;
 }
 .delivery__link {
