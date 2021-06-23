@@ -1,3 +1,8 @@
+@media (max-width: 1440px){
+	#toTop{
+		right: 30px;
+	}
+}
 
 @media (max-width: 1280px) {
 	.present {
@@ -69,6 +74,9 @@
 }
 
 @media (max-width: 780px) {
+	#toTop{
+		z-index: -5;
+	}
 	.statut__item {
 		max-width: 49%;
 	}
@@ -584,8 +592,7 @@ h3 {
 	min-height: 100%;
 	padding: 25px 10px 15px 20px;
 }
-.credit,
-.order{
+.credit{
 	padding: 120px 0px 15px 0px;
 }
 .order__content-img img {
@@ -707,6 +714,16 @@ h3 {
 .delivery__img{	
 	width: 100%;
 }
+.menu__btn.nav-menu__btn.open{
+	span:nth-child(1) {
+    opacity: .5;    
+}	
+ span:nth-child(2) {
+	opacity: .5;	
+}
+}
+
+
 }
 ////////////////////
 @media (max-width: 420px) {
