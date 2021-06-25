@@ -721,6 +721,14 @@ h3 {
  span:nth-child(2) {
 	opacity: .5;	
 }
+.mobail__header-prev.open{
+	span:nth-child(1) {
+    opacity: 1;    
+}	
+ span:nth-child(2) {
+	opacity: 1;	
+}
+}
 }
 
 
